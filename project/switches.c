@@ -28,16 +28,16 @@ void switch_init()/* setup switch */
 
 void switch_interrupt_handler() {
   char p2val = switch_update_interrupt_sense();
-  if (p2val == 1 && SW1 == 1){
+  if (p2val & SW1 ? 0 : 1){
     state_advance(1);
   }
-  else if (p2val == 1 && SW2 == 1){
+  else if (p2val & SW2 ? 0 : 1){
     state_advance(2);
   }
-  else if (p2val == 1 && SW3 == 1){
+  else if (p2val & SW3 ? 0 : 1){
     state_advance(3);
   }
-  else if (p2val == 1 && SW4 == 1){
+  else if (p2val & SW4 ? 0 : 1){
     state_advance(4);
   }
 }

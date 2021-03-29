@@ -31,16 +31,16 @@ void buzzer_set_period(short cycles){
 }
 
 void mario_song(){
-  int sequence[] = {E4, 0, E4, 0, 0, E4, 0, 0, C4, 0, E4, 0, 0, G4, 0, 0, 0, 0, 0, 0, 0, 0, G3, 0, 0};
+  int sequence[] = {E4, 0, E4, 0, 0, E4, 0, 0, C4, 0, E4, 0, 0, G4, 0, 0, 0, 0, 0, 0, G3, 0, 0};
 
   for(int i = 0 ; i < sizeof(sequence)/sizeof(*sequence) ; i++){
     buzzer_set_period(sequence[i]);
-    __delay_cycles(2400000);
+    __delay_cycles(1200000);
   }
 }
 
 void beethoven_5th(){
-  int sequence[] = {G5, 0, G5, 0, G5, 0, F4, F4, F4, F4, F4, F4, 0, 0, 0};
+  int sequence[] = {G5, 0, G5, 0, G5, 0, E4, E4, E4, E4, E4, E4, 0, 0, 0};
 
   for(int i = 0 ; i < sizeof(sequence)/sizeof(*sequence) ; i++){
     buzzer_set_period(sequence[i]);
@@ -49,7 +49,7 @@ void beethoven_5th(){
 }
 
 void path_of_wind(){
-  int sequence[] = {C4, 0, Bb4, 0, G3, 0, C4, 0, 0, 0, Bb4, 0, G3, 0};
+  int sequence[] = {C4, 0, Bb4, 0, G3, 0, C4, 0, 0, 0, Bb4, 0, G3, 0, 0, 0};
 
   for(int i = 0 ; i < sizeof(sequence)/sizeof(*sequence) ; i++){
     buzzer_set_period(sequence[i]);
@@ -58,7 +58,7 @@ void path_of_wind(){
 }
 
 void song_of_storms(){
-  int sequence[] = {D4, 0, F4, 0, D5, D5, D5, 0, D4, 0, F4, 0, D5, D5, D5, 0};
+  int sequence[] = {D4, 0, F4, 0, D5, D5, D5, 0, 0, 0, D4, 0, F4, 0, D5, D5, D5, 0};
 
   for(int i = 0 ; i < sizeof(sequence)/sizeof(*sequence) ; i++){
     buzzer_set_period(sequence[i]);
