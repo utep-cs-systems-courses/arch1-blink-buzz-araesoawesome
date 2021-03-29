@@ -4,6 +4,7 @@
 
 //Defining note frequencies for songs
 #define E4 1517
+#define Eb4 1607
 #define G4 1276
 #define C4 1911
 #define G3 2551
@@ -40,7 +41,7 @@ void mario_song(){
 }
 
 void beethoven_5th(){
-  int sequence[] = {G5, 0, G5, 0, G5, 0, E4, E4, E4, E4, E4, E4, 0, 0, 0};
+  int sequence[] = {G5, 0, G5, 0, G5, 0, Eb4, Eb4, Eb4, Eb4, Eb4, Eb4, 0, 0, 0};
 
   for(int i = 0 ; i < sizeof(sequence)/sizeof(*sequence) ; i++){
     buzzer_set_period(sequence[i]);
