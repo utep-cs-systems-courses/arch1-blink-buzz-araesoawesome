@@ -58,7 +58,7 @@ void path_of_wind(){
 }
 
 void song_of_storms(){
-  int sequence[] = {D4, 0, F4, 0, D5, D5, D5, 0, 0, 0, D4, 0, F4, 0, D5, D5, D5, 0};
+  int sequence[] = {D4, 0, F4, 0, D5, D5, D5, 0, 0, 0, 0, D4, 0, F4, 0, D5, D5, D5, 0};
 
   for(int i = 0 ; i < sizeof(sequence)/sizeof(*sequence) ; i++){
     buzzer_set_period(sequence[i]);
